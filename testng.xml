@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="RestAssured Test Suite" parallel="false">
+
+    <parameter name="baseUri" value="https://jsonplaceholder.typicode.com"/>
+
+    <test name="API Tests">
+        <classes>
+            <class name="com.example.restassureddemo.GetAPITests"/>
+            <class name="com.example.restassureddemo.PostAPITests"/>
+            <class name="com.example.restassureddemo.PUTAPI"/>
+            <class name="com.example.restassureddemo.DeleteApi"/>
+        </classes>
+    </test>
+</suite>
